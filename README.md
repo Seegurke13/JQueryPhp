@@ -11,6 +11,6 @@ $parser = new JQueryParser();<br>
 $manipulator = new JQueryManipulator($parser, $visitor);
 <br>
 <br>
-$manipulator->manipulate('$("body").remove()');
+$manipulator->manipulate('$("body").remove()', '<html><head><title>Test</test></head><body>Delete me</body></html>');
 <br>
 $parser->validate('$("body").remove()');
